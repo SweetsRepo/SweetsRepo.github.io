@@ -1,0 +1,10 @@
+---
+layout: post
+title: Welcome to my Blog
+date: 2017-02-08T17:16:00.000Z
+categories: update
+---
+
+<img src="/images/fulls/01.jpg" class="fit image"> Welcome to my blog. This 
+blog exists to allow me to document coding experiences, my work in research,
+and general notes of interest in my nerdy world.
