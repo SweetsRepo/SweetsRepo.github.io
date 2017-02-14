@@ -1,8 +1,8 @@
 - name: Facebook
-  link: 'https://www.facebook.com/comfusionllc'
+  link: ''
   social_icon: Facebook
-  new_window: true
+  new_window: false
 - name: RSS
-  link: '/feed.xml'
+  link: ''
   social_icon: RSS
-  new_window: true
+  new_window: false
