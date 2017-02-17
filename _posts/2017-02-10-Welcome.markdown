@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome To My Blog
-date: 2017-02-08T17:16:00.000Z
+date: 2017-02-10T17:16:00.000Z
 categories: update
 ---
 
@@ -10,4 +10,11 @@ name is Christopher Sweet and at the time of writing I am an aspiring Computer
 Engineer at Rochester Institute of Technology. This blog will serve to detail
 my adventures when coding, studying, and researching. I hope to use this as a 
 log, forcing myself to write about what my current projects are as well as the
-inevitable bugs that come with them. Hope you enjoy!
+inevitable bugs that come with them. 
+
+Additionally I may just post here to post. I've included a picture of Atlas
+above that I took while in New York City recently. I've been reading this book
+Atlas Shrugged which is really quite a wonderful read. Would highly recommend 
+it to anyone who thinks they have an engineering and work oriented mindset. 
+
+Anyways, guess that's enough rambling for now. Hope you enjoy!
