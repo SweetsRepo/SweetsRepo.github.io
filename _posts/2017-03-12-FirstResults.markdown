@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generative Adversarial Networks: First Results
-date: 2017-03-08T17:16:00.000Z
+date: 2017-03-12T17:16:00.000Z
 categories: update
 ---
 
