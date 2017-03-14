@@ -5,7 +5,7 @@ date: 2017-03-12T17:16:00.000Z
 categories: update
 ---
 
-#Generative Adversarial Networks
+# Generative Adversarial Networks
 
 Generative Adversarial Networks have been a personal research topic of mine
 throughout the semester and today I have gotten a usuable output for the first
@@ -13,14 +13,14 @@ time. This has not only given me satisfaction as one often feels when their
 code works, but also insight into my future developments. But before getting
 too far ahead of myself, let me walk you through some of the steps I've taken.
 
-##High-Level Goal:
+## High-Level Goal:
 
 To be able to produce a generated sample which mimics an input dataset with a 
 high level of fidelity. Furthermore this should be accomplished using a 
 neural network architecture which may be scaled to n dimensional input 
 feature sets.
 
-##Methodology:
+## Methodology:
 
 In order to accomplish the above goals a generative adversarial network was 
 constructed to approximate input dataset's PDF and use it to generate new 
@@ -121,7 +121,7 @@ self.loss_g = tf.reduce_mean(-tf.log(self.D_))
 
 ```
 
-##Results
+## Results
 Training the network takes around 2 minutes when using 10000 pretraining samples
 and 100000 adversarial samples with a batch size of 50. Once trained the network
 was used to predict values along the input distribution as shown below:
@@ -135,7 +135,7 @@ occurs because of the low feedback on relatively rare values along the edges of
 the distribution. In future work this should be correctable by implementing
 mini-batch discrimination.
 
-##Future Work
+## Future Work
 With this toy model complete the next goal I have set is to scale the design
 for multi-feature datasets. The end goal is to be able to take in arbitrary
 datasets with arbitrary feature sets and create useful data. This should help 
