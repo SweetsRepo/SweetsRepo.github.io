@@ -23,7 +23,7 @@ feature sets.
 ## Methodology:
 
 In order to accomplish the above goals a generative adversarial network was 
-constructed to approximate input dataset's PDF and use it to generate new 
+constructed to approximate an input dataset's PDF, and use it to generate new 
 samples. If you are interested in learning more about generative adversarial
 networks I highly recommend reading some of my older posts or doing a quick
 Google Search.
@@ -31,7 +31,7 @@ Google Search.
 The network architecture can be broken up into 2 parts; the Generator and the
 Discriminator. 
 
-The generator is responsible for creating new data, and uses a 
+The generator was responsible for creating new data, and used a 
 simple 3-layer neural network with a softplus activation layer to help expand
 input values into real-valued data. Some pertinent code snippets are shown below:
 
@@ -51,13 +51,12 @@ def generator(self, seed):
     a1 = tf.nn.softplus(h1)
     y = tf.matmul(a1, W2) + b2
     return y
-
 ```
 
-The discriminator is responsible for differentiating between data which belongs
+The discriminator was responsible for differentiating between data which belongs
 to the original dataset and the generated dataset. The architecture used was a 
 4 layer neural network with rectified linear activations on all but the output
-layer. The output layer uses the sigmoid function to bound output values 
+layer. The output layer used the sigmoid function to bound output values 
 between 0 and 1. Once again, pertinent code is shown below:
 
 ```python
@@ -83,7 +82,6 @@ def discriminator(self, data, reuse=False):
     a2 = tf.nn.relu(h2)
     y = tf.matmul(a2, W3) + b3
     return tf.sigmoid(y)
-
 ```
 
 With the architectural definitions complete a training procedure was defined.
@@ -103,7 +101,6 @@ for i in range(10000):
        pre_loss_eval = self.loss_pre.eval(feed_dict={self.pre: np.reshape(mini_d, (con['batch_size'], 1)),
        self.pre_: np.reshape(mini_d_, (con['batch_size'], 1))})
        print("Step %d\n Discriminator: %g" % (i, pre_loss_eval))
-
 ```
 
 Note that this dataset can be approximated by a normal distribution, hence the
@@ -118,7 +115,6 @@ attempts to minimize misclassifications.
 ```python
 self.loss_d = tf.reduce_mean(-tf.log(self.D) - tf.log(1 - self.D_))
 self.loss_g = tf.reduce_mean(-tf.log(self.D_))
-
 ```
 
 ## Results:
@@ -130,7 +126,7 @@ was used to predict values along the input distribution as shown below:
 <img src="/images/fulls/03.png" class="fit image">
 
 Note that this is accomplished by feeding a set of linearly space values along
-the range of interest (RoI).The true distribution is shown by the green line, 
+the range of interest (RoI).The true distribution is shown by the orange line, 
 while the generated distribution is shown by the blue line. The discrepancy 
 occurs because of the low feedback on relatively rare values along the edges of
 the distribution. In future work this should be correctable by implementing
