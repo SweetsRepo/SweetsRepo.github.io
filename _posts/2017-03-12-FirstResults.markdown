@@ -121,7 +121,8 @@ self.loss_g = tf.reduce_mean(-tf.log(self.D_))
 
 ```
 
-## Results
+## Results:
+
 Training the network takes around 2 minutes when using 10000 pretraining samples
 and 100000 adversarial samples with a batch size of 50. Once trained the network
 was used to predict values along the input distribution as shown below:
