@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TensorFlow: Growing Pains
+title: TensorFlow - Growing Pains
 date: 2017-02-22T17:16:00.000Z
 categories: update
 ---
