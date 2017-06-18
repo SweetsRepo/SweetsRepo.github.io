@@ -50,7 +50,7 @@ Despite the failure to perform at competition, a few good runs of our car were
 captured. Below is a link to the car during practice, where braking, drifting,
 and adaptive speed control may be seen:
 
-[![Practice Run]](https://youtu.be/5yPk6YW4bvY)
+[Practice Run](https://youtu.be/5yPk6YW4bvY)
 
 In future years we would like to experiment with new micrcontrollers and new 
 hardware for the car itself.
