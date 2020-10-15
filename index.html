@@ -14,7 +14,8 @@ layout: default
       </section>
     {% endfor %}
   </section>
-<div class="multi-search multi-search--issue-item">
+  <section>
+    <div class="multi-search multi-search--issue-item">
     <ul class="rlist ">
         <li class="grid-item separated-block--dashed--bottom">
             <div class="issue-item clearfix">
@@ -91,7 +92,6 @@ layout: default
 </div>
 <link rel="stylesheet"
     href="https://dl.acm.org/specs/products/acm/widgets/authorizer/scss/style.css" />
-  <section>
     <div class="row">
       {% for post in site.posts offset:1 %}
         <article class="{% cycle '6u', '6u$' %} 12u(small)">
